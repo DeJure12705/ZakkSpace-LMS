@@ -66,8 +66,8 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-lock me-2"></i>Manage Lockers</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ route ('addLockers') }}" class="dropdown-item">Add Lockers</a>
-                            <a href="viewlocker.html" class="dropdown-item">View Lockers</a>
-                            <a href="assignlocker.html" class="dropdown-item">Assign Lockers</a>
+                            <a href="{{ route('viewLockers') }}" class="dropdown-item">View Lockers</a>
+                            <a href="{{ route('assignLockers') }}" class="dropdown-item">Assign Lockers</a>
                         </div>
                     </div>
                     <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Overdues</a>
@@ -165,7 +165,7 @@
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
-                            <a href="" class="dropdown-item">Log Out</a>
+                            <a href="{{ route('adminDashboard') }}" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
                 </div>
@@ -346,7 +346,7 @@
                                     <span>Short message goes here...</span>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center pt-3">
+                            <div class="d-flex align-items-center border-bottom py-3">
                                 <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                 <div class="w-100 ms-3">
                                     <div class="d-flex w-100 justify-content-between">

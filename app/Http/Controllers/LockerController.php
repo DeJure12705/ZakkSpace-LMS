@@ -64,4 +64,14 @@ class LockerController extends Controller
     {
         //
     }
+
+    public function view()
+    {
+        return view('viewLockers');
+    }
+
+    public function assign()
+    {
+        return view('assignLockers');
+    }
 }
